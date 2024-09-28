@@ -1,0 +1,61 @@
+let mapleader=" "
+
+
+noremap gc :vsc Edit.ToggleLineComment<CR>
+vmap gc :vsc Edit.ToggleLineComment<CR>
+
+noremap <F2> :vsc View.SolutionExplorer<CR>
+nnoremap <C-n> View.SolutionExplorer<CR>
+noremap <C-w> :vsc File.Close<CR>
+
+noremap <F3> :vsc View.SolutionExplorer<CR>:vsc Window.NextDocumentWindowNav<CR>
+
+
+set incsearch
+set hlsearch
+set cursorline
+set smartcase
+set autoindent
+set scrolloff=10
+set ignorecase
+
+set relativenumber
+set number
+nmap <MiddleMouse> <Nop>
+
+nmap <Leader>f :vsc View.CommandWindow<CR>
+
+" Copy Paste
+
+" Close
+nmap <C-w> <Nop>
+
+
+" Movement
+nmap <C-O> :vsc View.NavigateBackward<CR>
+nmap <C-I> :vsc View.NavigateForward<CR>
+nmap <C-P> :vsc Edit.GoToFile<CR>
+nmap gi :vsc Edit.GoToImplementation<CR>
+
+
+" Go to tab by number
+noremap <leader>1 1gt
+noremap <leader>2 2gt
+noremap <leader>3 3gt
+noremap <leader>4 4gt
+noremap <leader>5 5gt
+
+
+" Errors
+nmap [d :vsc View.NextError<CR>
+nmap ]d :vsc View.PreviousError<CR>
+
+" Debugging
+nmap <Leader>i :vsc Debug.StepInto<CR>
+nmap <Leader>o :vsc Debug.StepOver<CR>
+nmap <Leader>u :vsc Debug.StepOut<CR>
+nmap <Leader>c :vsc Debug.Start<CR>:vsc Debug.StartDebugTarget<CR>
+nmap <Leader>b :vsc Debug.ToggleBreakpoint<CR>
+nmap <Leader>r :vsc Debug.ReattachtoProcess<CR>
+nmap <Leader>a :vsc Debug.AttachtoProcess<CR>
+nmap <Leader>s :vsc Debug.StopDebugging<CR>
