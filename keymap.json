@@ -1,0 +1,81 @@
+// dev: open key context view
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+//
+// space space h focus on left
+// space space l focus on right
+//
+[
+	{
+		"context": "ProjectSearchBar",
+		"bindings":
+		{
+			"ctrl-w w": "pane::CloseActiveItem"
+		}
+	},
+
+	{
+  "context": "Workspace && os == windows > Pane && os == windows > Editor && os == windows && jupyter && mode == full && VimControl && vim_mode == normal && vim_operator == none",
+  "bindings": {
+    "space i": "agent::ToggleFocus"
+  }
+},
+{
+  "context": "Dock > AgentPanel > AcpThread > MessageEditor > Editor && jupyter && mode == auto_height && VimControl && vim_mode == normal && vim_operator == none",
+  "bindings": {
+    "space i": null
+  }
+},
+
+	{
+		"context": "Editor && vim_mode == normal && !menu",
+		"bindings": {
+			"space f": "file_finder::Toggle",
+			"space s": "pane::DeploySearch",
+			"space h": "vim::GoToPreviousTab",
+			"space l": "vim::GoToTab",
+			"ctrl-j": "terminal_panel::Toggle",
+			"space e": "workspace::ToggleLeftDock"
+			// "space i": "agent::ToggleFocus",
+			// "ctrl-i": "workspace::ToggleRightDock"
+		}
+	},
+	{
+		"context": "vim_mode == insert",
+		"bindings": {
+			// Keep insert mode clean; optionally add jk->Escape:
+			// "j k": "vim::NormalBefore"
+		}
+	},
+	{
+		"context": "ProjectSearchBar",
+		"bindings": {
+			// "space f": "buffer_search::Deploy"
+		}
+	},
+	{
+		"context": "ProjectPanel",
+		"bindings": {
+			"space f": "project_panel::NewSearchInDirectory"
+		}
+	},
+	{
+		"context": "Workspace && (EmptyPane || SharedScreen)",
+		"bindings": {
+			"space f": "file_finder::Toggle",
+			"space s": "pane::DeploySearch"
+		}
+	},
+	{
+		"context": "Dock",
+		"bindings": {
+			// "ctrl-h": "workspace::ActivatePaneLeft",
+			// "space l": "workspace::ActivatePaneRight",
+			// "space h": "workspace::ActivatePaneLeft"
+			// "ctrl-k": "workspace::ActivatePaneUp",
+			// "ctrl-j": "workspace::ActivatePaneDown"
+		}
+	}
+]
+
