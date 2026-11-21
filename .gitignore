@@ -1,0 +1,28 @@
+# Claude Code credentials and machine-local overrides
+.claude.json
+Claude/.credentials.json
+Claude/settings.local.json
+
+# Claude Code runtime data
+Claude/backups/
+Claude/cache/
+Claude/daemon/
+Claude/debug/
+Claude/file-history/
+Claude/image-cache/
+Claude/jobs/
+Claude/paste-cache/
+Claude/plugins/
+Claude/projects/
+Claude/session-env/
+Claude/sessions/
+Claude/shell-snapshots/
+Claude/tasks/
+Claude/telemetry/
+Claude/history.jsonl
+Claude/stats-cache.json
+Claude/mcp-needs-auth-cache.json
+Claude/daemon*
+Claude/.last-*
+Claude/*.bak
+Claude/*.log
