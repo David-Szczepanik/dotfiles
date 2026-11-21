@@ -1,0 +1,195 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+	"cli_default_open_behavior": "existing_window",
+ "agent_servers": {
+  "claude-acp": {
+   "type": "registry"
+  }
+ },
+ "outline_panel": {
+  "dock": "right"
+ },
+ "collaboration_panel": {
+  "dock": "right"
+ },
+ "autosave": {
+		"after_delay": {
+			"milliseconds": 500,
+		},
+	},
+	"edit_predictions": {
+		"mode": "eager",
+  "provider": "zed",
+	},
+	"search": {
+		"case_sensitive": false,
+		"center_on_match": true,
+		"whole_word": false,
+		"include_ignored": false,
+	},
+	"git_panel": {
+		"dock": "left",
+  "tree_view": true,
+	},
+	"sticky_scroll": {
+		"enabled": true,
+	},
+	"show_whitespaces": "selection",
+	"whitespace_map": {
+		"tab": "→",
+		"space": "→",
+	},
+	"inlay_hints": {
+		"enabled": true,
+		"show_type_hints": true,
+		"show_parameter_hints": false,
+		"show_other_hints": false,
+	},
+	"git": {
+		"inline_blame": {
+			"enabled": false,
+		},
+	},
+	"disable_ai": false,
+	"use_auto_surround": true,
+	"languages": {
+		"Python": {
+			"show_edit_predictions": false,
+			"tab_size": 4,
+			"hard_tabs": false,
+		},
+		"Go": {
+			"inlay_hints": {
+				"enabled": true,
+				"show_type_hints": false,
+				"show_parameter_hints": false,
+				"show_other_hints": false,
+			},
+		},
+		"Svelte": {
+			"inlay_hints": {
+				"enabled": false,
+			},
+		},
+		"CSS": {
+			"language_servers": [
+				"tailwindcss-intellisense-css",
+				"!vscode-css-language-server",
+				"...",
+			],
+		},
+	},
+	"lsp": {
+		"vscode-css-language-server": {
+			"settings": {
+				"css": {
+					"lint": {
+						"unknownAtRules": "ignore",
+					},
+				},
+			},
+		},
+		"gopls": {
+			"settings": {
+				"ui.diagnostic.analyzes": {
+					"errcheck": true,
+				},
+				"ui.diagnostic.staticcheck": true,
+			},
+		},
+		// "svelte": {
+		// 	"initialization_options": {
+		// 		"typescript": {
+		// 			"preferences": {
+		// 				"importModuleSpecifierPreference": "non-relative",
+		// 			},
+		// 		},
+		// 		"javascript": {
+		// 			"preferences": {
+		// 				"importModuleSpecifierPreference": "non-relative",
+		// 			},
+		// 		},
+		// 	},
+		// },
+	},
+	"autoscroll_on_clicks": false,
+	"scroll_beyond_last_line": "off",
+	"project_panel": {
+		"dock": "left",
+  "folder_icons": false,
+	},
+	"title_bar": {
+		},
+	"auto_update": true,
+	"buffer_font_weight": 400.0,
+	"prettier": {
+		"allowed": true,
+	},
+	"diagnostics": {
+		"inline": {
+			"padding": 3,
+			"enabled": true,
+		},
+	},
+	"icon_theme": {
+  "mode": "light",
+  "light": "JetBrains New UI Icons (Dark)",
+  "dark": "JetBrains New UI Icons (Dark)"
+ },
+	"buffer_font_family": "CaskaydiaCove Nerd Font",
+	"agent": {
+		"sidebar_side": "right",
+  "dock": "left",
+  "tool_permissions": {
+			"default": "allow",
+		},
+		"inline_assistant_model": {
+			"provider": "copilot_chat",
+			"model": "claude-haiku-4.5",
+		},
+		"profiles": {
+			"agent": {
+				"name": "Agent",
+				"tools": {},
+				"enable_all_context_servers": false,
+				"context_servers": {},
+			},
+		},
+		"default_profile": "ask",
+		"default_model": {
+			"provider": "llama.cpp",
+			"model": "C:\\DEV\\models\\gguf\\gpt-oss-20b-MXFP4.gguf",
+		},
+		"model_parameters": [],
+	},
+	"telemetry": {
+		"diagnostics": true,
+		"metrics": false,
+	},
+	"vim_mode": true,
+	"vertical_scroll_margin": 10,
+	"base_keymap": "JetBrains",
+	"ui_font_size": 16,
+	"buffer_font_size": 15.0,
+	"theme": {
+		"mode": "dark",
+		"light": "Gruvbox Light Hard",
+		"dark": "VSCode Dark Modern",
+	},
+	"tabs": {
+		"file_icons": false,
+	},
+	"current_line_highlight": "none",
+	"format_on_save": "on",
+	"tab_size": 4,
+	"hard_tabs": true,
+	"show_signature_help_after_edits": true,
+	"relative_line_numbers": "disabled",
+}

@@ -1,0 +1,31 @@
+.env.keys
+
+# Claude Code credentials and machine-local overrides
+.claude.json
+**/.claude/settings.local.json
+/config/claude/.credentials.json
+/config/claude/settings.local.json
+
+# Claude Code runtime data
+/config/claude/backups/
+/config/claude/cache/
+/config/claude/daemon/
+/config/claude/debug/
+/config/claude/file-history/
+/config/claude/image-cache/
+/config/claude/jobs/
+/config/claude/paste-cache/
+/config/claude/plugins/
+/config/claude/projects/
+/config/claude/session-env/
+/config/claude/sessions/
+/config/claude/shell-snapshots/
+/config/claude/tasks/
+/config/claude/telemetry/
+/config/claude/history.jsonl
+/config/claude/stats-cache.json
+/config/claude/mcp-needs-auth-cache.json
+/config/claude/daemon*
+/config/claude/.last-*
+/config/claude/*.bak
+/config/claude/*.log
